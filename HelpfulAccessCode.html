@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="author" content="Matthew Horan">
+        
+        <meta name="description" content="Helpful VBA code I've learned overtime.">
+
+        <title>VBA code for Microsoft Access</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+
+    <body>
+        <h1>Helpful Microsoft Access VBA Code I've learned overtime</h1>
+        <hr>    
+        <br>
+        <h3>Use a Case statement and Message Box to test the value of something.</h3>
+        <br>
+<p>Sub TestingValues</p>
+<p>Dim NumValues As Long</p>
+<br>
+<p>Select Case NumValues</p> 
+<p>Case Is > 10</p>
+<p>MsgBox "Value is greater than 10"</p>
+<p>Case 5 To 10</p>
+<p>MsgBox "Value is between 5 and 10.</p>
+<p>Case 1, 2, 3, 4</p>
+<p>MsgBox "Value is between 1 and 4.</p>
+<p>Case Else</p>
+<p>MsgBox "Value is less than 1"</p>
+<p>End Select</p>
+<br>
+<p>End Sub</p>
+<br>
+    
